@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Estudos Floripa + TEC</title>
+  </head>
+  <body>
+    <!--Aqui começa o cabeçalho-->
+    <header class="headerContainer">
+      <figure class="avatarHeader">
+        <a href="/"
+          ><img class="avatar" src="/images/avatar.jpg" alt="Foto do Autor"></a>
+        <figcaption class="welcomeHeader">
+          Seja Bem Vindo
+          <div class="apoioHeader">Meus estudos Floripa + TEC</div>
+        </figcaption>
+      </figure>
+    </header>
+    <br>
+    <!--Aqui começa o menu de navegação-->
+    <div class="homeContainer">
+      <nav>
+        <a href="/index.html">Início</a> |
+        <a href="/semana01/semana01.html">Receita</a> |
+        <a href="/semana02/semana02.html">Calculadora</a> |
+        <a href="https://github.com/taleshenn" target="_blank">MEU GITHUB</a>
+        </nav>
+    </div>
+    <br>
+    <!--Aqui começa o conteúdo-->
+    <main>
+      <div class="homeContainer">
+        <details>
+          <summary class="propostaAula">
+            <strong>Proposta da aula:&nbsp; </strong> Clique aqui para saber
+            mais.
+          </summary>
+          <p>
+            Vamos começar o desenvolvimento de uma calculadora para aplicar o conhecimento adquirido durante o curso. <br>
+            <strong>Crie um documento HTML com a seguinte estrutura:</strong>
+          </p>
+          <ul>
+            <li>Um título h1 com o nome da sua calculadora</li>
+            <li>Um pequeno parágrafo descrevendo seu projeto (use sua criatividade!)</li>
+            <li>Uma lista ordenada com o passo-a-passo para usar a sua calculadora</li>
+            <li>Dois elementos input do tipo número</li>
+            <li>Um elemento select com as opções sendo as principais operações matemáticas</li>
+            <li>Um botão para realizar o cálculo</li>
+            <li>Um parágrafo com os dizeres <q> <strong>O resultado da operação é: </strong></q>. 
+              <br>Posteriormente usaremos JavaScript para inserir o valor neste parágafo.</li>
+          </ul>
+         <p>Obs. Não se preocupe com estilos e funcionalidades neste momento.</p> 
+          
+        </details>
+        <h2>CALCULADORA</h2>
+        <div class="semanaDois"> 
+          <h3>Minha primeira calculadora</h3>
+          <p>Aprendendo a criar <code>inputs</code> e ao mesmo tempo pracicando <strong>CSS</strong>.</p>
+          <p><strong>Siga esses passos:</strong></p>
+          <ol>
+            <li>Digite apenas números nos campos abaixo.</li>
+            <li>Escolha o tipo de operação você quer executar.</li>
+            <li>Clique no botão para fazer o cálculo.</li>
+          </ol>
+          <div class="formulariosCalculador">
+            <p><strong>Vamos calcular</strong></p>
+            <input id="valor1" type="number" autofocus>
+            <input id="valor2" type="number"><br>
+            <label for="operadoresCalc">Escolha o Operador</label>
+            <select name="operadores" id="operadoresCalc">
+              <option value="soma">SOMA</option>
+              <option value="subtracao">SUBTRAÇÃO</option>
+              <option value="multiplicacao">MULTIPLICAÇÃO</option>
+              <option value="divisao">DIVISÃO</option>
+            </select>
+            <br>
+            <button id="botCalcular">Calcular</button> 
+            <p>O resultado da operação é:</p>
+          </div>
+        </div>
+        </div>
+      </main>
+      <br>
+    <!--Aqui começa o rodapé-->
+    <footer class="footerContainer">
+      <a href="https://taleshenn.com.br" target="_blank">Meu website de fotografia </a>
+    </footer>
+  </body>
+</html>

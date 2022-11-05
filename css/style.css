@@ -1,0 +1,164 @@
+/* BODY */
+body {
+  background-color: #666;
+  margin: 0;
+}
+
+/* Títulos e Parágrafos */
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ffbf00;
+  text-shadow: 1px 1px 1px #333;
+  text-align: center;
+  
+}
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000000;
+    background-color: #ffc801;
+    padding: 15px;
+    border-radius: 5px;
+}
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #7b3100;
+    text-transform: uppercase;
+}
+p,ul,ol {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5em;
+}
+
+/* LINK */
+a {
+  color: #333;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  padding: 10px;
+}
+a:hover {
+  color: white;
+  text-decoration: underline;
+}
+a:visited {
+  color: #666;
+}
+a:link {
+  color: chocolate;
+}
+a:active {
+  color: aqua;
+}
+
+/* CÓDIGOS */
+code{
+  background-color:antiquewhite;
+  padding: 5px;
+  border-style: dashed;
+  border-width: 1px;
+}
+/* AVATAR */
+.avatar {
+  width: 100px;
+  border-radius: 100px;
+}
+/* RECEITA */
+.receita {
+display: flex;
+background-color:antiquewhite;
+padding: 15;
+margin: 0;
+border-radius: 15px;
+}
+
+/* IMAGEM ILUSTRATIVA */
+.imagemReceita {
+width: 300px;
+border-radius: 15px;
+
+ }
+
+/* SUMARIO */
+.propostaAula {
+  padding: 20px;
+  color:white;
+  background-color: rgb(49, 141, 0);
+  border-radius: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* CONTEÚDO DO CABEÇALHO */
+.headerContainer {
+  padding: 15px;
+  background-color: #333;
+  margin: 15px auto;
+  max-width: 800px;
+  border-radius: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+/* AVATAR HEADER */
+.avatarHeader {
+  margin: 0;
+  padding-left: 15px;
+  display: flex;
+  align-items: center;
+}
+
+/* AVATAR TÍTULO */
+.welcomeHeader {
+  padding-left: 25px;
+  color: white;
+}
+
+/* AVATAR SEGUNDA LINHA */
+.apoioHeader {
+  color: #ffbf00;
+  font-size: 16px;
+  padding-top: 5px;
+}
+
+/* CONTEÚDO DA PÁGINA */
+.homeContainer {
+  background-color: #fff;
+  margin: 0 auto;
+  max-width: 800px;
+  border-radius: 5px;
+  padding: 15px;
+}
+
+/* CONTEÚDO DO RODAPÉ */
+.footerContainer {
+  padding: 15px;
+  background-color: #333;
+  margin: 5px auto;
+  max-width: 800px;
+  border-radius: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  text-align: center;
+}
+/* CONTEÚDO DA CACULADORA */
+.formulariosCalculador {
+  display: grid;
+  padding: 15px;
+  background-color: #333;
+  margin: 0 auto;
+  max-width: 320px;
+  border-radius: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+}
+
+#valor1, #valor2,#botCalcular, #operadoresCalc {
+  background-color:#ffc801;
+  border: dotted;
+  margin: 1px;
+  border-width: 1px;
+}

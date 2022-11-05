@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="semana01/css/style.css">
+    <title>Estudos Floripa mais TEC</title>
+</head>
+
+<body>
+    <main>
+        <div>
+            <p>Mostrar uma mensagem ao clicar no botão</p>
+            <input type="number" class="num1">
+            <!--primeiro numero-->
+            <input type="number" class="num2">
+            <!--segundo numero-->
+            <button class="btn">Calcular</button>
+            <p class="resCalc"></p>
+            <!--Essa tag que vai imprimir a resposta do js-->
+
+
+            <p class="res"></p>
+            <!--vai imprimir só um texto-->
+        </div>
+    </main>
+
+    <script> 
+
+        document.querySelector('.btn').addEventListener('click', calc); //aqui ele vai lá no html pegar o botão que está com a classe btn e vai ficar 'ouvindo' qualquer clique e só depois de clicar ele vai processar a função abaixo e mostrar o resultado
+
+        function calc() {
+            //chama as tags que precisa puxando pelas Class ou Id
+            let num1 = document.querySelector('.num1') //primeiro numero
+            let num2 = document.querySelector('.num2') //segundo numero
+            let resCalc = document.querySelector('.resCalc') //vai imprimir o resultado no html
+
+            //calcular
+            let calc = Number(num1.value) + Number(num2.value) //tem que envolver as variaveis que estão sendo calculadas em um Number() e chamar o valor que foi digitado no input com o .value, se não ele vai enterder que é uma string e vai concatenar e não somar como a gente quer
+
+            resCalc.innerHTML = `A soma é ${calc}` //o Inner vai imprimir o valor que v c colocar nos inputs, pode imprimir só texto tbm
+
+
+            //SÓ TEXTO
+            let resText = document.querySelector('.res') //vai imprimir o resultado no html
+
+            resText.textContent = 'O textContent vai imprimir só texto. Enquanto o innerHTML você pode fazer qualquer coisa'
+        };
+
+    </script>
+</body>
+
+</html>
