@@ -22,9 +22,9 @@ function operacao() {
                     recebeResultado = entradaValor01 * entradaValor02;
                     break;
             default:
-                recebeResultado = ":(";
+                recebeResultado = "&#9785;";
                     break
                     }    
     //Imprime o valor no html
-    document.querySelector("#resultaOperacao").textContent = recebeResultado;
+    document.querySelector("#resultaOperacao").innerHTML = recebeResultado;
         } 
