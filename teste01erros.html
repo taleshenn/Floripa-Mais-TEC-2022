@@ -1,0 +1,65 @@
+<body>
+    <!--FORMULÁRIO DA CALCULADORA-->
+        <div class="formulariosCalculador">
+            <p><strong>Vamos calcular</strong></p>
+            <input id="valor1" type="number" autofocus>
+            <input id="valor2" type="number"><br>
+            <label for="operadoresCalc">Escolha o Operador</label>
+            <select name="operadores" id="operadoresCalc">
+              <option value="soma">SOMA</option>
+              <option value="subtracao">SUBTRAÇÃO</option>
+              <option value="multiplicacao">MULTIPLICAÇÃO</option>
+              <option value="divisao">DIVISÃO</option>
+            </select>
+            <br>
+            <button type="button" id="botCalcular" onclick="operacao()">Calcular</button> 
+            <p>O resultado da operação é:</p>
+            <p id="resultaOperacao"></p>
+          </div>
+    <!--SCRIPT DA CALCULADORA-->
+          <script>
+        //Do jeito que estava ficava retornando o erro "operacao is not a function"
+        //Adicionando function opercao () {} isso resolve          
+        //
+        //definindo aqui as variaveis de entrada
+        let entradaValor01 = document.getElementById("valor1");
+        let entradaValor02 = document.getElementById("valor2");
+        let recebeResultado;
+        //Estas variáveis precisaram ser modificadas para as que estão abaixo
+        //let entradaValor01 = parseInt(document.getElementById("valor1").value);
+        //let entradaValor02 = parseInt(document.getElementById("valor2").value);
+        //let recebeResultado = null;
+        //DÚVIDA: por que não preciso usar # para chamar o ID de valo1 e valor2?
+
+
+        //define a operação a ser executada
+        let operacao = document.getElementById("operadoresCalc");
+        // essas variável também acrescentou o .value
+        //let operacao = document.getElementById("operadoresCalc").value;
+    
+        //Função da calculadora
+        switch (operacao) {
+                case "soma":
+                    recebeResultado = entradaValor01 + entradaValor02;
+                    break;
+                case "subtracao":
+                        recebeResultado = entradaValor01 - entradaValor02;
+                        break;
+                case "divisao":
+                        recebeResultado = entradaValor01 / entradaValor02;
+                        break;
+                case "multiplicacao":
+                        recebeResultado = entradaValor01 * entradaValor02;
+                        break;
+                default:
+                        break
+                        }
+        //Imprime o valor no html
+        document.querySelector('#resultaOperacao').innerHTML = recebeResultado
+        //Aqui mudou .innerHTML para .textContent
+        //Document.querySelector("#resultaOperacao").textContent = recebeResultado;
+        //DÚVIDA: por AQUI preciso usar # para chamar o ID  resultaOperacao?
+        //Porque o método é getElementById que já deixa subentendido que receberá um nome de ID. 
+        //Já o querySelector deixa livre para selecionar diferentes tipos (IDs, classes, elementos).
+          </script>
+    </body>

@@ -52,7 +52,7 @@
             <li>Um parágrafo com os dizeres <q> <strong>O resultado da operação é: </strong></q>. 
               <br>Posteriormente usaremos JavaScript para inserir o valor neste parágafo.</li>
           </ul>
-         <p>Obs. Não se preocupe com estilos e funcionalidades neste momento.</p> 
+          <p>Obs. Não se preocupe com estilos e funcionalidades neste momento.</p> 
           
         </details>
         <h2>CALCULADORA</h2>
@@ -67,18 +67,22 @@
           </ol>
           <div class="formulariosCalculador">
             <p><strong>Vamos calcular</strong></p>
-            <input id="valor1" type="number" autofocus>
-            <input id="valor2" type="number"><br>
-            <label for="operadoresCalc">Escolha o Operador</label>
+            <input placeholder="valor 1" id="valor1" type="number" step="" autofocus>
+            <label for="operadoresCalc"></label>
             <select name="operadores" id="operadoresCalc">
-              <option value="soma">SOMA</option>
-              <option value="subtracao">SUBTRAÇÃO</option>
-              <option value="multiplicacao">MULTIPLICAÇÃO</option>
-              <option value="divisao">DIVISÃO</option>
+              <option  value="escolher">ESCOLHA</option>
+              <option  value="soma">SOMAR</option>
+              <option value="subtracao">SUBTRAIR</option>
+              <option value="multiplicacao">MULTIPLICAR</option>
+              <option value="divisao">DIVIDIR</option>
             </select>
+            <input placeholder="valor 2" id="valor2" type="number"><br>
             <br>
-            <button id="botCalcular">Calcular</button> 
+            <button type="button" id="botCalcular" onclick="operacao()">Calcular</button> 
             <p>O resultado da operação é:</p>
+            <div class="resultado">
+            <p id="resultaOperacao">:)</p>
+            </div>
           </div>
         </div>
         </div>
@@ -88,5 +92,8 @@
     <footer class="footerContainer">
       <a href="https://taleshenn.com.br" target="_blank">Meu website de fotografia </a>
     </footer>
+            <!--Inicio do Javascript-->
+            <script src="js/calculadora.js"></script>
+            <!--Final do Javascript-->   
   </body>
 </html>

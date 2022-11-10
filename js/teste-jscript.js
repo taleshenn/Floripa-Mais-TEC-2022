@@ -1,4 +1,4 @@
-function cDdastro (){
+function cadastro (){
   let nomeCliente = "Tales";
   let idadeCliente = 46;
   let profisCliente = "Desenvolvedor Full Stack :p";
